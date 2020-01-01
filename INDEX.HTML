@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vuelto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1>SISTEMA DE CAMBIO</h1>
+    <table id="productos" border="1 solid 2px">
+        <tr>
+            <th colspan="3">Productos que se ofertan</th>
+        </tr>
+        <tr>
+            <th>Código</th>
+            <th>descripción</th>
+            <th>precio</th>
+        </tr>
+    </table>
+    <br><br>
+    <label for="codprod">codigo del producto: </label>
+    <select name="codigos" id="codprod"></select>
+    <br><br>
+    <label for="cantidad">Cantidad: </label>
+    <input type="text" id="cantidad">
+    <br><br>
+    <button onclick="agregar()">Agregar al carro!!!</button>&emsp;&emsp;&emsp;
+    <br><br>
+    <label for="cash">Efectivo: </label>
+    <input type="text" id="cash">
+    <br><br>
+    <label id="cambio">Cambio a dar: </label>&emsp;&emsp;&emsp;
+
+    <button onclick="pago()">Calcular!!!</button>
+    <table id="aLlevar" border="1 solid 2px">
+        <tr>
+            <th colspan="4">Productos a llevar</th>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <th>Código</th>
+            <th>descripción</th>
+            <th>precio</th>
+        </tr>
+    </table>
+
+</body>
+<script src="procesos.js"></script>
+
+</html>

@@ -1,0 +1,11 @@
+table,
+h1 {
+    position: relative;
+    left: 35%;
+}
+
+#aLlevar {
+    position: relative;
+    left: 50%;
+    top: -190px;
+}
